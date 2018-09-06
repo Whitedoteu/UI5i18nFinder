@@ -3,12 +3,11 @@ from tkinter import filedialog
 import os
 import json
 import collections
+
 i18nList = {}
 i18realused = {}
-
 i18nMissingInProp ={}
 PropMissingIni18n ={}
-
 root = Tk()
 root.withdraw()
 

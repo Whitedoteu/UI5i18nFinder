@@ -3,16 +3,16 @@ from tkinter import filedialog
 import os
 import json
 import collections
-
+#Variables
 i18nList = {}
 i18realused = {}
 i18nMissingInProp ={}
 PropMissingIni18n ={}
 root = Tk()
 root.withdraw()
-
 current_directory = filedialog.askdirectory()
 
+#Programm
 for root, dirs, files in os.walk(current_directory):  
     for filename in files:
         if any(x in filename for x in [".js",".properties",".xml"]):
